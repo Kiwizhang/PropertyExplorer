@@ -1,0 +1,117 @@
+  <!DOCTYPE HTML">
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Singapore Property Explorer</title>
+    
+    <!--ICON-->
+    <link rel="shortcut icon" type="image/x-icon" href="img/restaurant.ico" />
+      
+      <!--main stylesheet-->
+      <link rel="stylesheet" href="css/style.css" />
+      
+      <!--leaflet stylesheet-->
+      <link rel="stylesheet" href="css/leaflet.css"/>
+    
+    <!--cluster stylesheet-->
+    <link  rel="stylesheet" href="css/MarkerCluster.Default.css"/>
+
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+ <link rel="stylesheet" href="css/style2.css">
+    
+   
+
+    
+    <!--Data for layers-->
+    <script src="js/census.js"></script>
+    <script src="js/trail.js"></script>
+    <script src="js/mrtStation.js"></script>
+    <script src="js/propertySubzone.js"></script>
+    </head>
+    <body>
+  <div style="margin-top:15px">
+
+
+   <div style="float:left;margin-left:20px;margin-right:50px;margin-top:10px">
+  
+
+  <select class="selector3" id="Type"  >
+    <option value="PropertyType" selected="selected">Property Type</option>
+    <option value="Condominium">Condominium</option>
+    <option value="Apartment">Apartment</option>
+    <!-- <option value="Detached">Detached</option>
+    <option value="Semi-Detached">Semi-Detached</option>
+    <option value="Terrace">Terrace</option> -->
+
+
+  </select>
+    </div>
+
+   <div style="display: inline-block;margin-left:20px;float:left"> 
+
+    <label for="amount">Price Range:</label>
+    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+    </br>
+
+  <div class="selector1"id="slider-range" style="float:left;margin-right:10px" ></div>
+  </div>
+
+   <div style="display: inline-block;margin-left:20px;margin-right:40px;float:left"> 
+
+    <label for="size">Floor Area:</label>
+    <input  type="text" id="size" readonly style="border:0; color:#f6931f; font-weight:bold;">
+     </br>
+
+
+  <div class="selector2" id="slider-size" ></div>
+  </div>
+
+</div>
+</br>
+</br>
+
+
+
+
+      <!--div for the map-->
+      <div id="map"></div>
+
+      <div id="main">
+    
+      <p><b>Price Trends in The Region(psf)</b></p>
+      <div id="vis" style="width:380;margin-left:20px"> </div>
+    </div>
+  
+   <script src="js/jquery.js"></script>
+
+  <script type="text/javascript" src="js/d3.js"></script>
+    <script src="js/coffee-script.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/queue.min.js"></script>
+ 
+    <!--libraries-->
+      <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+        <script src="js/WOZ_03SM.js"></script>
+
+      <!--link to main javascript file-->
+        <script src="js/leaflet.markercluster.js"></script>
+        <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+
+
+      <!-- Include this library for mobile touch support  -->
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
+
+
+
+      <script src="js/SliderControl.js"></script>
+      <script src="js/main.js"></script>
+    
+
+    <!--link to cluster javascript file-->
+
+
+
+    </body>
+  </html>
