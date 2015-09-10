@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Singapore-Restaurant-Explorer
 
 This is a Data Visualisation Application developed with d3.js and leaflet.js: 
